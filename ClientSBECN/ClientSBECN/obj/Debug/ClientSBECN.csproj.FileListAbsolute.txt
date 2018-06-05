@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Debug\ClientSBECN.exe.config
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Debug\ClientSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Debug\ClientSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.Form1.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.Properties.Resources.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Debug\ClientSBECN.csprojResolveAssemblyReference.cache

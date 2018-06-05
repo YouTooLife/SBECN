@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\bin\Debug\ServerSBECN.exe.config
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\bin\Debug\ServerSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\bin\Debug\ServerSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.Form1.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.Properties.Resources.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ServerSBECN\ServerSBECN\obj\Debug\ServerSBECN.pdb

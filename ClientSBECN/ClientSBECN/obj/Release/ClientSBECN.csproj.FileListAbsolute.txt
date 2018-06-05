@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Release\ClientSBECN.exe.config
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Release\ClientSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\bin\Release\ClientSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.Form1.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.Properties.Resources.resources
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\ClientSBECN\ClientSBECN\obj\Release\ClientSBECN.csprojResolveAssemblyReference.cache

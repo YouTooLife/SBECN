@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\bin\Release\CounterSBECN.exe.config
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\bin\Release\CounterSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\bin\Release\CounterSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.Form1.resources
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.Properties.Resources.resources
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.exe
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.pdb
+C:\Users\user\Documents\Developing\C#\SBECN\CounterSBECN\obj\Release\CounterSBECN.csprojResolveAssemblyReference.cache
