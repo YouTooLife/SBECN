@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,7 +22,7 @@ namespace ClientSBECN
         {
             const string valid = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@%&*$#";
             StringBuilder res = new StringBuilder();
-        
+
             while (0 < length--)
             {
                 res.Append(valid[rand.Next(valid.Length)]);
@@ -104,11 +104,11 @@ namespace ClientSBECN
                     votersKey = mes[6].Split(']');
 
                     Console.Out.WriteLine(mes[6]);
-                
+
                     counterRSA = new RSA(BigInteger.Parse(counterK),BigInteger.Parse(counterN));
 
-                  
-                    
+
+
 
                     n = voters.Length - 1;
 
@@ -119,14 +119,14 @@ namespace ClientSBECN
                          Thread send = new Thread(delegate () { sendVoite(); });
                          send.IsBackground = true;
                          send.Start();
-                        
+
                     }
                 }
             }
             else
             {
                     string message = myRSA.Decrypt(s);
-                  
+
                     string[] mes = message.Split('[');
 
                 if (mes[0] == "revoite" && mes[1] != "777me")
@@ -148,7 +148,7 @@ namespace ClientSBECN
                 {
                     SendMessage("vAnswer[id: " + Form1.index + " - принято! (голосую)", ReceiveSocket);
                     ReceiveSocket.Close();
-                    
+
                     Thread send = new Thread(delegate () { sendVoite(); });
                     send.IsBackground = true;
                     send.Start();
@@ -165,7 +165,7 @@ namespace ClientSBECN
                     Thread send = new Thread(delegate () { SendToServ(); });
                     send.IsBackground = true;
                     send.Start();
-                    
+
                 }
 
                 if (mes[0] == "voite")
@@ -175,7 +175,7 @@ namespace ClientSBECN
                         voites += mes[1] + "]";
 
                     rtb.Invoke((MethodInvoker) delegate() {
-                        rtb.Text += "\n\nВходящий пакет " + "№"+voitesCount 
+                        rtb.Text += "\n\nВходящий пакет " + "№"+voitesCount
                         +"\n"+ mes[1];
                     });
                     SendMessage("vAnswer[id: "+Form1.index+" - принято! (пакет голоса)",ReceiveSocket);
@@ -190,7 +190,7 @@ namespace ClientSBECN
                         rtb2.Text += "\n" + mes[2];
                     });
                 }
-               
+
             }
         }
 
@@ -240,7 +240,7 @@ namespace ClientSBECN
                    BigInteger.Parse(votersKey[Form1.index + 1].Split('|')[0]),
                    BigInteger.Parse(votersKey[Form1.index + 1].Split('|')[1]));
                 ClientSocket sender2
-                    = new ClientSocket(voters[Form1.index + 1], 
+                    = new ClientSocket(voters[Form1.index + 1],
                     Convert.ToInt32(votersPort[Form1.index + 1]),Form1.rtb);
                 sender2.SendMessage(clientRSA.Encrypt("sendServ["), true);
                 sender2.ClientClose();
@@ -266,7 +266,7 @@ namespace ClientSBECN
 
         public void sendVoite()
         {
-            
+
             Console.Out.WriteLine("N:"+n+" MV:"+myVoters.Count);
             for (int i = 0; i < myVoters.Count; i++)
             {
@@ -274,7 +274,7 @@ namespace ClientSBECN
 
                 rtb.Invoke((MethodInvoker)delegate ()
                 {
-                    rtb.Text += "\n\nИсходящий пакет " + "№" + (i+1) 
+                    rtb.Text += "\n\nИсходящий пакет " + "№" + (i+1)
                     +"\n"+voters[i % n]
                     + "\n" + votersPort[i % n]
                     + "\n" + myVoters[i];
@@ -318,7 +318,7 @@ namespace ClientSBECN
                    BigInteger.Parse(votersKey[Form1.index + 1].Split('|')[0]),
                    BigInteger.Parse(votersKey[Form1.index + 1].Split('|')[1]));
                 ClientSocket sender
-                    = new ClientSocket(voters[Form1.index + 1], 
+                    = new ClientSocket(voters[Form1.index + 1],
                     Convert.ToInt32(votersPort[Form1.index + 1]), Form1.rtb);
                 sender.SendMessage(clientRSA.Encrypt("canVoite["), true);
                 sender.ClientClose();
@@ -342,7 +342,7 @@ namespace ClientSBECN
 
         public void Revoite()
         {
-            
+
             voitesCount =  c = 0;
             voites = "";
             /* Thread send = new Thread(delegate () { sendVoite(); });
@@ -403,7 +403,7 @@ public void ListenSocket()
                     MessageBox.Show(ex.Message);
                 }
             }
-            
+
 
         }
         public void SendMessage(string message, Socket sender)
@@ -412,8 +412,8 @@ public void ListenSocket()
             {
                 Byte[] SendBytes = Encoding.Default.GetBytes(message);
                 sender.Send(SendBytes);
-        
-               
+
+
                 string s = Encoding.Default.GetString(SendBytes.ToArray());
 
                 Console.Out.WriteLine("\nTracieve: " + s + "\n");
@@ -441,7 +441,7 @@ public void ListenSocket()
         string[] votersPort = null;
         string[] votersKey = null;
 
-        
+
 
         List<string> myVoters = new List<string>();
 
@@ -468,18 +468,18 @@ public void ListenSocket()
             this.rtb2 = rtb2;
             //this.voters = voters;
             ipHost = Dns.GetHostEntry(host);
-            ipAddr = ipHost.AddressList[2];
+            ipAddr = ipHost.AddressList[0];
             ipEndPoint = new IPEndPoint(ipAddr, port);
- 
+
             // Create socket TCP/IP
             sListener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             sListener.Bind(ipEndPoint);
             sListener.Listen(100);
 
-            // Create RSA key 
+            // Create RSA key
             myRSA = new RSA();
 
-            isListen = true; 
+            isListen = true;
         }
     }
 }
